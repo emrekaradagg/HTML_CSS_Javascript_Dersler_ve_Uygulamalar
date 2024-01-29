@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // bir sayının 10-50 arası olup olmadığını kontrol etme
+        let sayi1=50;
+        if(sayi1>10 && sayi1<50){
+            document.write("arasında");
+        }
+        else{
+            document.write("arasında değil <br>" );
+        }
+        // bir sayını pozitif tek sayı olup olmadığını kontrol ediniz
+
+        let sayi2=-5;
+        if( sayi2 % 2==0 && sayi2>0){
+            document.write("Pozitif çift sayıdır");
+        }
+        else{
+            document.write("Pozitif tek sayıdır <br>");
+        }
+
+        // x y z sayılarının büyüklük karşılaştırmasını yapınız
+
+        let x=30 , y=5 , z=20 ;
+        
+        if(x>y && x>z){
+            document.write("X en büyük <br>");
+        } 
+        
+        else if(y>x && y>z){
+            document.write("Y en büyük <br>");
+        } 
+        
+        else if(z>y && z>x){
+            document.write("Z en büyük <br>")
+        }
+
+        // 2 vize (40%) ve 1 final (60%) notuna göre hesaplanan ortalama için;
+       
+       
+       
+
+        let vize1 = 10;
+        let vize2 = 10;
+        let final = 70;
+        let ortalama=(((vize1 + vize2) / 2) * 0.4) + (final * 0.6);
+        
+        document.write("ortalamanız:" + ortalama + " ");
+
+
+         // a- eğer ortalama 50 ve üstündeyse geeçti değilse kaldı yazsın
+
+       /* if(ortalama>=50){
+            document.write("Geçti");
+        }
+        else{
+            document.write("Kaldı");
+        } */
+
+
+         // b- geçmek için ortalama 50 bile olsa final notu 50 olmalıdır
+
+       /* if(ortalama>=50 && final>=50){
+            document.write("Geçti");
+        }
+        else{
+            document.write("Kaldı <br>");
+        } */
+
+
+         // c-finalden 70 alındığında ortalama 50 nin altında olsa bile dersten geçilsin
+
+         if(ortalama>=50 || final>=70){
+            document.write("Geçti");
+        }
+        else{
+            document.write("Kaldı");
+        }
+        
+
+
+
+
+
+    </script>
+</body>
+</html>

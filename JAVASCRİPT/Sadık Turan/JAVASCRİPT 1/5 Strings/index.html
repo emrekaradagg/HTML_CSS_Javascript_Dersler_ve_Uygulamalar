@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let ad = "Emre";
+        let soyad = "Karadağ";
+        let yas = "66";
+        let sehir = "Erzurum";
+
+        let mesaj1 = "Benim adım" + ad + "Soyadım" + soyad + '.' + sehir + '\' de yaşıyorum.' + 'Emekliliğe ' +(65-yas) + ' yılım kaldı.';
+
+       //backtick
+        mesaj2 =  `Benim adım ${ad} Soyadım ${soyad} ${sehir} \ de yaşıyorum.Emekliliğe ${65-yas} yılım kaldı.`;
+
+        //ternary operators
+        let emeklilik = (65 - yas > 0) ? "Emekliliğe" + (65-yas) + "yıl kaldı." : "Zaten emeklisiniz";
+        mesaj =  `Benim adım ${ad} Soyadım ${soyad} ${sehir} \ de yaşıyorum. ${emeklilik}`;
+       
+       
+        document.write(mesaj);
+
+
+
+
+    </script>
+</body>
+</html>

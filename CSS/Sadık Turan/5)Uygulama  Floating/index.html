@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        h1{
+            margin: 0px;
+        }
+        header, footer{
+            background-color: #8267BE;
+            color: #FFBD35;
+            padding: 15px;
+
+        }
+        .col{
+            float: left;
+            padding: 15px 15px 15px 0px;
+        }
+        .menü{
+            width: 25%;
+           
+            
+        }
+        .menü ul{
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+        }
+        .menü li{
+            padding: 8px;
+            margin-bottom: 8px;
+            background-color: #502064;
+            color: white;
+        }
+        .menü li:hover{
+            cursor: pointer;
+            background-color: #8267BE;
+        }
+        .content{
+            width: 75%;
+            
+            
+        }
+        .clearfix::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Header</h2>
+    </header>
+<main class="clearfix">
+    <div class="menü col">
+        <ul>
+            <li>Html</li>
+            <li>Css</li>
+            <li>Javascript</li>
+        </ul>
+
+
+    </div>
+    <div class="content col">
+        <h1>Komple Web Geliştirme Eğitimi</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Commodi repudiandae vero molestias non fuga, consectetur inventore iure sequi? 
+            Aspernatur magni at sint rerum numquam nulla iure voluptate cupiditate quod suscipit!
+        </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Vel quae repellat quod ab beatae numquam quia ipsa assumenda nihil 
+                porro alias iure modi, pariatur doloribus dolores, similique sed laborum explicabo?
+            </p>
+    </div>
+</main>
+
+
+    <Footer>
+        <h2>Footer</h2>
+    </Footer>
+</body>
+</html>

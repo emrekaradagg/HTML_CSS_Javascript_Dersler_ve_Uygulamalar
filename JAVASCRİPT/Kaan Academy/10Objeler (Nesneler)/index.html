@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      /*  var insan1= {
+            isim :"Emre",
+            yas: 28 ,
+            gözrengi: "Ela",
+
+        };
+        document.write(insan1.isim+ " "+insan1.yas+ " " +insan1.gözrengi+ "<br>");
+        document.write(insan1["isim"].length ) ; */
+
+        function insan(isim,yas,gözrengi){
+            this.isim = isim;
+            this.yas = yas;
+            this.gözrengi = gözrengi ;
+            this.isimdegistir = isimdegistir
+            this.dogumyili = dogumyilihesapla;
+        
+        function isimdegistir(yeniisim){
+            this.isim = yeniisim;
+        }
+       
+
+        function dogumyilihesapla(){
+            return 2023-this.yas;
+        }   
+
+
+
+        }
+        var i1= new insan("Emre", 28 ,"Ela");
+       
+        document.write(i1.isim+ " " +i1.yas+ " " +i1.gözrengi+ "<br>");
+
+
+        i1.isimdegistir("Nida");
+        document.write(i1.isim+ " " +i1.yas+ " " +i1.gözrengi+ " " +i1.dogumyili());
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let ögrenci1_ad ="Ada";
+        let ögrenci1_soyad = "Bilgi";
+        let ögrenci1_dogumtarihi = 2012 ;
+        let ögrenci1_matematiknotlari1 = 70;
+        let ögrenci1_matematiknotlari2 = 70;
+        let ögrenci1_matematiknotlari3 = 80;
+        let ögr1_ortalama = (ögrenci1_matematiknotlari1 + ögrenci1_matematiknotlari2 + ögrenci1_matematiknotlari3) /3;
+        let ögr1_yas = 2022-ögrenci1_dogumtarihi;
+        if(ögr1_ortalama>=50){
+            document.write("başarılı" );
+        }
+
+        let ögrenci2_ad = "Yiğit";
+        let ögrenci2_soyad= "Bilgi"; 
+        let ögrenci2_dogumtarihi = 2010 ;
+        let ögrenci2_matematiknotlari1 = 40;
+        let ögrenci2_matematiknotlari2 = 40;
+        let ögrenci2_matematiknotlari3 = 50;
+        let ögr2_ortalama =(ögrenci2_matematiknotlari1 + ögrenci2_matematiknotlari2 + ögrenci2_matematiknotlari3) /3;
+        let ögr2_yas = 2022-ögrenci1_dogumtarihi;
+        if(ögr2_ortalama>=50){
+            document.write("başarılı" );
+        }
+        else {
+            document.write("Başarısız");
+        }
+
+
+        document.write(+ögr1_yas+ "<br>" +ögr1_ortalama+ "<br>" +ögr2_ortalama);
+
+
+
+    </script>
+    
+</body>
+</html>

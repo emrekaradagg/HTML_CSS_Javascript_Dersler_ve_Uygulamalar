@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let name = ["emre","karadag"];
+
+        // let firstName = name[0];
+        // let lastName = name[1];
+       
+        
+
+      // console.log(firstName, lastName);
+
+
+      let urun = {
+        marka : "Apple",
+        model : "Iphone 13",
+        fiyat : 2000,
+     
+      }
+      let {marka, model, fiyat = 0, satisDurumu = false} = urun;
+
+      function urunGoster(obj) {
+        let {marka, model, fiyat = 0, satisDurumu = false} = obj;
+      console.log(marka, model, fiyat, satisDurumu);
+
+      }
+
+      urunGoster(urun);
+       
+
+
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button onclick="oncekiFotoyuGoster()">Önceki</button>
+        <img id="slider" src="img/araba.jpg" alt="">
+        <button onclick="sonrakiFotoyuGoster()">Sonraki</button>
+    </div>
+
+    <script>
+        var resimler =[
+            "img/araba.jpg",
+            "img/buz devri.jpg",
+            "img/kurtulus.jpg"
+        ];
+        var suankiResimIndex = 0;
+
+        function oncekiFotoyuGoster(){
+            var slider=document.getElementById("slider");
+            suankiResimIndex--;
+            if(suankiResimIndex<0){
+                suankiResimIndex = resimler.length - 1;
+            }
+        slider.src = resimler[suankiResimIndex];
+        }
+
+        function sonrakiFotoyuGoster(){
+            var slider =document.getElementById("slider");
+            suankiResimIndex++;
+            if(suankiResimIndex>= resimler.length){
+                suankiResimIndex = 0;
+            }
+            slider.src = resimler[suankiResimIndex];
+
+        }
+
+
+
+
+    </script>
+
+
+
+</body>
+</html>

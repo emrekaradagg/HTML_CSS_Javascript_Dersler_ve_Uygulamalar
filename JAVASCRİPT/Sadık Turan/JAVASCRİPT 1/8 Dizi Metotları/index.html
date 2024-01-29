@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let ögrenciler = ["çınar","yiğit","ada"];
+
+        sonuc = ögrenciler.length;
+        sonuc = ögrenciler.toString();
+        sonuc = ögrenciler.join("");
+
+        //eleman silme
+        //sonuc = ögrenciler.pop();     // son eleman silinir ve geri döndürülür
+      //  sonuc = ögrenciler.shift();      //ilk eleman silinir
+
+       // eleman ekleme
+      // sonuc = ögrenciler.push("sena");    //dizinin sonuna eleman ekler
+      // sonuc = ögrenciler.unshift ("emre");         //dizinin başına eleman ekler
+        
+         
+
+       let markalar1 =["opel","toyota"];
+       let markalar2 =["renault","audi"];
+       let markalar3 =["mercedes"];
+
+      // sonuc =markalar1.concat(markalar2, markalar3);
+
+      //sonuc = markalar1.splice(0, 1, "bmv", "audi");
+      sonuc = markalar1.splice(0,1);
+
+
+
+
+        
+        document.write(sonuc);
+       // document.write(markalar1);
+
+
+
+
+
+    </script>
+</body>
+</html>

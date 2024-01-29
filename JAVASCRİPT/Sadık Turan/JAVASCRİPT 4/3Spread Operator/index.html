@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        const msj =["benim","adım","emre","karadağ"];
+
+        // let sonuc = "";
+        // for(let x of msj) {
+        //     sonuc += x + " ";
+        // }
+       // console.log(sonuc);
+
+        // console.log(...msj);
+
+        // const dizi1 =["bir","iki"];
+        // const dizi2 =["üç","dört"];
+
+        // const dizi3 = [...dizi1, ...dizi2];
+
+        // console.log(dizi3);
+
+
+        const sayilar1 =[1,2,3];
+        // const sayilar2 = sayilar1;   //referans copy
+        const sayilar2 = [...sayilar1]; //value copy
+
+
+        sayilar2[1] = 20;
+
+        console.log(sayilar1,sayilar2)
+
+
+        const user = {
+            userename : "emre",
+            email : "info@.com"
+
+        }
+
+        const address = {
+            city : "erzurum"
+        }
+
+        console.log({...user, ...address});
+
+        function toplam(...args) {
+            let sonuc = 0;
+
+            for (let sayi of args) {
+                sonuc += sayi;
+            }
+            return sonuc;
+        }
+
+        console.log(toplam(1,4,6));
+        console.log(toplam(1,4,6,23,89));
+
+        function bilgileriGoster(isim, soyad, ...adres) {
+            console.log(isim, soyad, adres);
+        }
+
+          bilgileriGoster("emre","karadag","erzurum","yakutiye")  
+
+
+
+    </script>
+</body>
+</html>

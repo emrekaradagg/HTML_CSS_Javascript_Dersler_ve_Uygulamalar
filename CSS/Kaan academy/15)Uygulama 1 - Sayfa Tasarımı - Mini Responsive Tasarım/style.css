@@ -1,0 +1,82 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+div{
+    height: 300px;
+    width: 100%;
+    text-align: center;
+    color: orangered;
+}
+#Kaanacademy{
+    font-family: 'Times New Roman', Times, serif;
+    background: url(img/araba.jpg);
+    background-size: 100% 300px;
+}
+.KaannacademyYazi1{
+    font-size: 20px;
+    text-shadow: 0px 0px 1px black;
+    background-color: lightgreen;
+}
+.resimler{
+    
+    float:left
+    width: 100%;
+    font-weight: bold;
+}
+.resimler1{
+padding-top: 10px ;
+width: 33.33%;
+float:left
+
+}
+.resimler1:nth-child(1){
+background: url(img/buz\ devri.jpg) no-repeat ;
+background-size: 100% 300px;
+
+}
+.resimler1:nth-child(1){
+color: turquoise;
+
+}
+.resimler1:nth-child(2){
+background: url(img/kalp.png) no-repeat;
+background-size: 100% 300px;
+}
+.resimler1:nth-child(2){
+color: green;
+}
+.resimler1:nth-child(3){
+background: url(img/kurtulus-gunu-2-yeni-tehdit-2016.jpg)no-repeat;
+background-size: 100% 300px;
+}
+.resimler1:nth-child(3){
+color: purple;
+}
+#hakkimizda{
+clear:both;
+background-color: tomato;
+height: 770px;
+color: black;
+}
+#hakkimizda img{
+border: 5px dashed black;
+margin: 20px;
+width: 20%;
+height: 300px;
+
+}
+#hakkimizda p{
+white-space: pre-line;
+text-transform: capitalize;
+font-size: 20px;
+}
+#hakkimizda p::first-line{
+font-weight: bold;
+text-decoration: underline;
+font-size: 40px;
+}
+@media screen and (max-width:992px){
+.resimler1{
+width: 100%; 
+}
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let url = "https://www.sadikturan.com/";
+        let kursadi = "Komple Web Geliştirme Kursu Eğitimi";
+
+      // 1-url kaç karakterlidir?
+      /*  let sonuc;
+            sonuc = url.length;
+            
+           //2-kurs adı ka. kelimeden oluşmaktadır? 
+           sonuc =kursadi.split(" ").length;
+
+            //3-url https ile mi başlıyor?
+            sonuc = url.startsWith("https");
+            if (sonuc){
+                document.write("evet başlıyor");
+            }
+            else{
+                document.write("hayır başlamıyor")
+            } */
+            
+          
+            //4-kursadı içerisinde eğitimi kelimesi var mı?
+
+        /*   if (kursadi.indexOf("Eğitimi") >-1 ) {
+                document.write("Evet var");
+            } else{
+                document.write("hayır yok");
+            }*/
+            
+           // 5- url ve kursadı değişkenlerini kullanarak aşağıdaki string bilgiyi oluşturunuz.
+       
+           kursadi = kursadi.toLocaleLowerCase();
+           kursadi = kursadi.replaceAll (" ","-");
+
+           sonuc = `${url}/${kursadi}` ;  
+           document.write(sonuc);
+        
+        
+        
+        
+        
+        document.write(sonuc);
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

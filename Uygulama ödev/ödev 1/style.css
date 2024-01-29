@@ -1,0 +1,113 @@
+:root {
+    font-size: 16px;
+    box-sizing: border-box;
+  
+    --bg-color: #f9f4ef;
+    --headline-color: #020826;
+    --text-color: #716040;
+    --time-color: #8c7851;
+    --secondary-color: #eaddcf;
+    --media-caption-color: #8c7851;
+    --tertiary-color: #f25042;
+    --border-color: #020826;
+  }
+
+
+body {
+    font-family: "Times New Roman", Times, serif;
+    background-color: var(--secondary-color);
+  }
+  .main{
+    background-color: var(--bg-color);
+  }
+  .header {
+    padding: 1.4em 0;
+    text-align: center;
+  }
+  .title {
+    display: inline-block;
+    font-size: 2.4rem;
+    color: var(--headline-color);
+    border-bottom: 1px solid var(--text-color);
+    margin-bottom: 0.15em;
+  }
+  .baslik_aciklamasi {
+    font-size: 1.5rem ;
+    color: var(--text-color);
+    
+  }
+  .media {
+    background-color: var(--secondary-color);
+    width: 100%;
+    padding: 3em 1.5em 1.5em;
+    margin: 2em auto 1em;
+  }
+  
+  .media__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+    margin: 0 auto;
+  }
+  .resim_alt_yazi{
+    color: #716040;
+    padding: 0 1em;
+    max-width: 720px;
+    margin: 1em auto 0;
+    margin-top: 1em;
+  }
+  .bilgi {
+    margin: 3em auto;
+  }
+  
+
+
+.headline{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-align: center;
+    color: var(--headline-color);
+}
+.tüm_liste {
+    padding: 0 4em;
+  }
+  
+  .tüm_liste * {
+    margin-top: 1.2em;
+  }
+  
+  .tüm_liste > li {
+    font-size: 1.2rem;
+    text-align: justify;
+    color: var(--text-color);
+    margin-left: 25%;
+    margin-right:25%;
+  }
+  
+  .tüm_liste .özgecmis {
+    font-weight: 700;
+  }
+  
+.dip{
+    color: var(--text-color);
+    padding-top: 1em;
+    border-top: 1px solid var(--time-color);
+    margin: 2em 4em;
+    text-align: center;
+    margin-left: 25%;
+    margin-right:25%;
+}
+.footer{
+    background-color: var(--secondary-color);
+  color: var(--text-color);
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 1.5em;
+}
+.footer a {
+    text-decoration: none;
+    color: var(--tertiary-color);
+  }

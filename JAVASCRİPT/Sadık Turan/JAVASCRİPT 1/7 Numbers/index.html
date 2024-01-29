@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let sonuc;
+        sonuc = 10;
+        sonuc ="10";
+        sonuc = parseInt("10.6");
+        sonuc = parseFloat("10.6");
+        sonuc = isNaN("10a");
+        sonuc = isNaN("10");
+
+        let sayi = 12.345678;
+        sonuc = sayi.toPrecision(6);
+        sonuc = sayi.toFixed(4);
+
+        sonuc = Math.round(2.4);    
+        sonuc = Math.ceil(2.4); 
+        sonuc = Math.floor(2.4);   
+        sonuc = Math.sqrt(25);  
+        sonuc = Math.pow(2,4);  
+        sonuc = Math.abs(-2.4);  
+        sonuc = Math.min(2,4,3,8,9);  
+        sonuc = Math.max(2,4,3,8,9); 
+        sonuc = Math.random(); 
+        
+        
+        document.write(typeof sonuc);
+        document.write(sonuc);
+
+
+
+
+
+    </script>
+</body>
+</html>

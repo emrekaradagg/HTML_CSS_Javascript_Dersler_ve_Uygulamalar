@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form  onsubmit="return passwordValiDate()">
+
+        <input name="password" type="password" value="Şifrenizi giriniz...">
+        <br>
+        <input name="repassword" type="password" value="Şifrenizi tekrar giriniz...">
+        <br>
+        <input type="submit" value="Kayıt ol">
+
+
+    </form>
+    <script>
+       function passwordValiDate(){
+        var pass = document.getElementsByName("password")[0];
+        var repass = document.getElementsByName("repassword")[0];
+
+        if (pass.value != "" && repass.value != ""){
+            if (pass.value == repass.value){
+            alert ("Kayıt başarılı")
+         return true;   
+        }
+        }
+        
+
+        alert ("Şifre hatalı");
+        return false;
+
+
+
+       }
+
+
+
+
+
+
+
+    </script>
+   
+</body>
+</html>
