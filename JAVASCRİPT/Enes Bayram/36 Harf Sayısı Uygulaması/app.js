@@ -1,30 +1,18 @@
-//Geriye değer döndüren metot tanımlamak --- return : geriye döndürmek
+//Kelime sayısı bulma uygulaması
 
-// let dönenDeger = cube(2);
-// kareAl(dönenDeger);
+let metin = prompt("Lütfen kelimeyi yazınız");
 
+let harf = prompt("Lütfen harfi giriniz");
 
-// function kareAl(sayi) {
-//     let islem = sayi*sayi;
-//     console.log(islem);
-// }
+let sonuc = bul(harf);
+alert("Harf sayısı :" + sonuc);
 
-/* 
-        RETURN
-    1- Bir değeri metodun dışarısına çıkarmak , taşımak için kullanılır.
-    2- Bir metodu bitiren anahtat kelimedir.
-
-
-*/
-
-// function cube(sayi) {
-//     let sonuc = sayi*sayi*sayi;
-//     return sonuc;
-// }
-
-// function yazdir() {
-//     console.log("Emre");
-//     // void : Geriye değer döndürmeyen demektir.
-// }
-
-// yazdir();
+function bul(harf) {
+    let toplam=0;
+    for(i=0; i<metin.length; i++) {
+        if(metin.charAt(i).toLowerCase()===harf.toLowerCase()) {
+            toplam+=1;
+        }
+    }
+    return toplam;
+}
