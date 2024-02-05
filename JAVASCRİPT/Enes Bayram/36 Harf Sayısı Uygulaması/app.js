@@ -16,3 +16,5 @@ function bul(harf) {
     }
     return toplam;
 }
+
+
