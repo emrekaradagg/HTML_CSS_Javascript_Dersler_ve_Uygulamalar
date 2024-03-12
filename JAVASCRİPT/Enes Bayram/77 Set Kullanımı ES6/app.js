@@ -1,20 +1,20 @@
 //SET
 
-const set = new Set();
+// const set = new Set();
 
 //add metodu
 
-set.add(true)
-set.add(3.14)
-set.add("Emre")
+// set.add(true)
+// set.add(3.14)
 // set.add("Emre")
 // set.add("Emre")
 // set.add("Emre")
 // set.add("Emre")
 // set.add("Emre")
-set.add(7)
-set.add({username :"emre", password : "1"});
-set.add(1,2,3,4)
+// set.add("Emre")
+// set.add(7)
+// set.add({username :"emre", password : "1"});
+// set.add(1,2,3,4)
 
 //Size
 // console.log(set.size)
