@@ -7,7 +7,7 @@ class Currency{
       const response = await fetch(`${this.url}${firstCurrency}`);
       const result = await response.json();
      const exchangedResult = amount * result.data[secondCurrency];
-        
+
      return exchangedResult;
     }
 }
